@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:text="Setting"
+		android:background="@color/dialog_title"
+		android:gravity="center_vertical"
+		android:textSize="20dp"
+		android:textColor="@color/white"
+		android:textStyle="bold"
+		android:paddingLeft="10dp"
+		android:layout_height="50dp">
+	</TextView>
+	<View
+		android:background="#405a94"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"></View>
+
+	<LinearLayout
+		android:layout_marginTop="10dp"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_height="50dp">
+
+		<TextView
+			android:text="服务器地址:"
+			android:textSize="16dp"
+			android:textColor="#405a94"
+			android:gravity="center"
+			android:layout_marginLeft="10dp"
+			android:layout_width="100dp"
+			android:layout_height="match_parent" />
+
+		<EditText
+			android:id="@+id/ed_ip"
+			android:layout_width="match_parent"
+			android:layout_marginRight="10dp"
+			android:layout_marginLeft="10dp"
+			android:paddingLeft="10dp"
+			android:imeOptions="actionNext"
+			android:maxLines="1"
+			android:maxLength="15"
+			android:inputType="text"
+			android:hint="192.168.0.1"
+			android:textSize="16dp"
+			android:layout_height="match_parent" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_marginTop="10dp"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_height="50dp">
+
+		<TextView
+			android:text="端口号:"
+			android:textSize="16dp"
+			android:textColor="#405a94"
+			android:gravity="center"
+			android:layout_marginLeft="10dp"
+			android:layout_width="100dp"
+			android:layout_height="match_parent" />
+
+		<EditText
+			android:id="@+id/ed_port"
+			android:layout_width="match_parent"
+			android:layout_marginRight="10dp"
+			android:layout_marginLeft="10dp"
+			android:paddingLeft="10dp"
+			android:imeOptions="actionDone"
+			android:maxLines="1"
+			android:inputType="number"
+			android:maxLength="5"
+			android:hint="8080"
+			android:textSize="16dp"
+			android:layout_height="match_parent" />
+	</LinearLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_marginTop="50dp"
+		android:layout_marginBottom="30dp"
+		android:layout_height="wrap_content">
+
+		<Button
+			android:layout_width="wrap_content"
+			android:text="保存"
+			android:id="@+id/save"
+			android:layout_marginLeft="50dp"
+			android:textColor="#ffffff"
+			android:textSize="16dp"
+			android:layout_alignParentLeft="true"
+			android:background="@drawable/btn_blue"
+			android:layout_height="wrap_content" />
+
+		<Button
+			android:layout_width="wrap_content"
+			android:text="取消"
+			android:layout_alignParentRight="true"
+			android:id="@+id/cancel"
+			android:textColor="#ffffff"
+			android:textSize="16dp"
+			android:layout_marginRight="50dp"
+			android:background="@drawable/btn_blue"
+			android:layout_height="wrap_content" />
+
+	</RelativeLayout>
+
+
+</LinearLayout>

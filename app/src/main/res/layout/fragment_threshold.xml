@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="cn.logcode.traffic.ui.fragment.ThresholdFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/personal_gray"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_balance_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="当前1-4号小车账户余额告警值为"/>
+        <TextView
+            android:id="@+id/tv_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/tv_balance_warning"
+            android:text="50元"/>
+        <TextView
+            android:id="@+id/tv_setting_title"
+            android:layout_below="@id/tv_balance_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:text="设置1-4号小车账户余额告警值:"/>
+        <EditText
+            android:id="@+id/et_setting_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:hint="             "
+            android:layout_toRightOf="@id/tv_setting_title"
+            android:theme="@style/et_white_line"
+            android:layout_below="@id/tv_balance_warning" />
+        <TextView
+            android:layout_below="@id/tv_balance_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/et_setting_warning"
+            android:layout_marginTop="10dp"
+            android:text="元"/>
+
+        <Button
+            android:id="@+id/btn_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_setting_title"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toStartOf="@+id/et_setting_warning"
+            android:text="设置"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <View
+            android:layout_width="1dp"
+            android:background="#000000"
+            android:layout_height="match_parent"></View>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="1"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:id="@+id/lukou"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="1dp"
+            android:background="#000000"
+            android:layout_height="match_parent"></View>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="9"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:id="@+id/red_light"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="1dp"
+            android:background="#000000"
+            android:layout_height="match_parent"></View>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="8"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:id="@+id/yellow_light"
+            android:layout_height="match_parent" />
+
+
+        <View
+            android:layout_width="1dp"
+            android:background="#000000"
+            android:layout_height="match_parent"></View>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="5"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:id="@+id/green_light"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="1dp"
+            android:background="#000000"
+            android:layout_height="match_parent"></View>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="0.8">
+
+            <CheckBox
+                android:layout_width="40dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:layout_marginLeft="6dp"
+                android:button="@drawable/checkbox"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:background="#000000"
+            android:layout_height="match_parent"></View>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:text="设置"
+            android:id="@+id/setting"
+            android:textSize="18dp"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="1dp"
+            android:background="#000000"
+            android:layout_height="match_parent"></View>
+
+    </LinearLayout>
+
+    <View
+        android:background="#000000"
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="cn.logcode.traffic.ui.activity.PeccancyActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/black"
+        android:text="车辆违章查询"
+        />
+    <LinearLayout
+        android:id="@+id/ll_plate"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/tv_title"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_plate"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:text="车牌号：鲁"/>
+        <EditText
+            android:id="@+id/ed_licenseplate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ed_border"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btn_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="查询"
+                android:onClick="ViolationInquiry"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/btn_gray"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

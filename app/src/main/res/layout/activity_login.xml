@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/lr_bg"
+    tools:context=".ui.activity.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="-200dp"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/ed_username"
+            android:layout_width="300dp"
+            android:hint="请输入用户名"
+            android:gravity="center"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="16dp"
+            android:imeOptions="actionNext"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ed_border"
+            android:layout_height="50dp" />
+        <EditText
+            android:id="@+id/ed_userpass"
+            android:layout_below="@+id/ed_username"
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:hint="请输入密码"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ed_border"
+            android:layout_height="50dp" />
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:id="@+id/relate1"
+            android:layout_below="@+id/ed_userpass"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/save_pass"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="记住密码"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/auto_login"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="自动登录"
+                android:paddingLeft="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/relate1"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="登录"
+                android:id="@+id/login"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="注册"
+                android:id="@+id/register"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

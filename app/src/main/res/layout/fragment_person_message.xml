@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="cn.logcode.traffic.ui.fragment.PersonMessageFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_left"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:background="@color/personal_gray"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="姓名：XXX"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="性别：男"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="电话：12345678911"
+            android:padding="5dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_right_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/ll_left"
+        android:background="@color/personal_gray"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/tv_id_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身份证号：123456789101112222"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/tv_register_time"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="注册时间：2017.51"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_right_bottom"
+        android:layout_below="@id/rl_right_top"
+        android:layout_toRightOf="@id/ll_left"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/personal_gray">
+        <TextView
+            android:id="@+id/tv_mingxia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:text="名下车辆"/>
+        <LinearLayout
+            android:id="@+id/ll_car_left"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tv_mingxia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_mingxia"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/im_bm"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/icon_bm"/>
+            <TextView
+                android:id="@+id/tv_plate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="辽A：12345"
+                android:padding="10dp"/>
+        </LinearLayout>
+       <LinearLayout
+           android:id="@+id/ll_car_right"
+           android:layout_marginTop="10dp"
+           android:layout_toRightOf="@id/ll_car_left"
+           android:layout_width="wrap_content"
+           android:layout_below="@id/tv_mingxia"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <ImageView
+               android:id="@+id/im_zhonghua"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:layout_gravity="center"
+               android:src="@mipmap/icon_zhonghua"/>
+           <TextView
+               android:id="@+id/tv_plate2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/white"
+               android:gravity="center"
+               android:text="辽A：12345"
+               android:padding="10dp"/>
+       </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

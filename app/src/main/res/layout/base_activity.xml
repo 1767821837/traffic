@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorPrimaryDark"></View>
+
+        <RelativeLayout
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/status_bar"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/left_menu"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:clickable="true"
+                android:src="@mipmap/menu" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="用户登录"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            
+            <LinearLayout
+                android:id="@+id/recharge_record"
+                android:layout_width="120dp"
+                android:clickable="true"
+                android:visibility="gone"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="充值记录"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:clickable="true"
+                android:id="@+id/batch_recharge"
+                android:visibility="gone"
+                android:layout_height="match_parent"
+                android:layout_marginRight="120dp"
+                android:layout_alignParentRight="true">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="批量充值"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_zhuxiao"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="注销"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/desc_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/setting_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:gravity="center"
+                    android:text="网络设置"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tool_bar"></FrameLayout>
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/left_menu"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#ffffffff"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:listSelector="?attr/selectableItemBackground"
+        android:paddingTop="0dp" />
+
+</android.support.v4.widget.DrawerLayout>

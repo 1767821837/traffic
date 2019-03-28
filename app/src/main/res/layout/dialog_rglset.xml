@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/ed_border"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="红绿灯设置"
+        android:background="@color/dialog_title"
+        android:gravity="center_vertical"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:layout_height="50dp">
+    </TextView>
+    <View
+        android:background="#405a94"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:text="红灯周期:"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="match_parent" />
+        
+        <EditText
+            android:id="@+id/red_cycle"
+            android:layout_width="0dp"
+            android:layout_weight="3.5"
+            android:hint="30"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:maxLines="1"
+            android:maxLength="3"
+            android:paddingLeft="10dp"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:background="@drawable/ed_border"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:text="秒"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:text="黄灯周期:"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:id="@+id/yellow_cycle"
+            android:layout_width="0dp"
+            android:layout_weight="3.5"
+            android:hint="30"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:maxLines="1"
+            android:maxLength="3"
+            android:paddingLeft="10dp"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:background="@drawable/ed_border"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:text="秒"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:text="绿灯周期:"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:id="@+id/green_cycle"
+            android:layout_width="0dp"
+            android:layout_weight="3.5"
+            android:hint="30"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:maxLines="1"
+            android:maxLength="3"
+            android:paddingLeft="10dp"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:background="@drawable/ed_border"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:text="秒"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="确定"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:id="@+id/save"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn_blue"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="取消"
+            android:id="@+id/cancel"
+            android:layout_marginLeft="30dp"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_blue"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

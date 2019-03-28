@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="排序:"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#bdbdbd"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:entries="@array/rgl_sort_order"
+                android:layout_marginRight="100dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/query"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="查询"
+                android:layout_marginRight="10dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:layout_height="match_parent"></Button>
+
+            <Button
+                android:id="@+id/batch_setup"
+                android:text="批量设置"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:layout_height="wrap_content">
+
+            <View
+                android:background="#000000"
+                android:id="@+id/top_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <View
+                    android:layout_width="1dp"
+                    android:background="#000000"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="路口"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:id="@+id/lukou"
+                    android:layout_height="match_parent" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:background="#000000"
+                    android:layout_height="match_parent"></View>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="红灯时长"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:id="@+id/red_light"
+                    android:layout_height="match_parent" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:background="#000000"
+                    android:layout_height="match_parent"></View>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="黄灯时长"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:id="@+id/yellow_light"
+                    android:layout_height="match_parent" />
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:background="#000000"
+                    android:layout_height="match_parent"></View>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="绿灯时长"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:id="@+id/green_light"
+                    android:layout_height="match_parent" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:background="#000000"
+                    android:layout_height="match_parent"></View>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:text="操作项"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:layout_height="match_parent" />
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:background="#000000"
+                    android:layout_height="match_parent"></View>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.2"
+                    android:text="设置"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:layout_height="match_parent" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:background="#000000"
+                    android:layout_height="match_parent"></View>
+
+            </LinearLayout>
+
+            <View
+                android:background="#000000"
+                android:id="@+id/bottom_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></View>
+
+        </LinearLayout>
+        
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

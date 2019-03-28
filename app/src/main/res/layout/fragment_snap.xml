@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.logcode.traffic.ui.fragment.SnapFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:layout_weight="2">
+        <ImageView
+            android:id="@+id/iv_snap_one"
+            android:layout_width="150dp"
+            android:clickable="true"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_snap_one"
+            />
+
+        <ImageView
+            android:id="@+id/iv_snap_tow"
+            android:layout_width="150dp"
+            android:clickable="true"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_snap_one"
+            android:src="@drawable/icon_snap_tow" />
+        <ImageView
+            android:id="@+id/iv_snap_four"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:clickable="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+            android:layout_below="@id/iv_snap_one"
+            android:src="@drawable/icon_snap_four"
+            />
+
+        <ImageView
+            android:id="@+id/iv_snap_three"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:clickable="true"
+            android:layout_below="@id/iv_snap_tow"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/iv_snap_four"
+            android:src="@drawable/icon_snap_three" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:layout_weight="0.5">
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_line"
+            android:text="返回"/>
+    </LinearLayout>
+</LinearLayout>

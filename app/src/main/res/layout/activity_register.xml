@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.RegisterActivity">
+    
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/ed_username"
+            android:layout_width="300dp"
+            android:hint="请输入用户名"
+            android:gravity="center"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="16dp"
+            android:imeOptions="actionNext"
+            android:background="@drawable/ed_border"
+            android:layout_height="40dp" />
+        <EditText
+            android:id="@+id/ed_pass"
+            android:layout_width="300dp"
+            android:hint="请输入密码"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/ed_username"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textSize="16dp"
+            android:imeOptions="actionNext"
+            android:background="@drawable/ed_border"
+            android:layout_height="40dp" />
+
+        <EditText
+            android:id="@+id/ed_again_pass"
+            android:layout_width="300dp"
+            android:hint="请再次输入密码"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/ed_pass"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textSize="16dp"
+            android:imeOptions="actionNext"
+            android:background="@drawable/ed_border"
+            android:layout_height="40dp" />
+
+        <EditText
+            android:id="@+id/ed_phone"
+            android:layout_width="300dp"
+            android:hint="请输入手机号"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/ed_again_pass"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="11"
+            android:textSize="16dp"
+            android:imeOptions="actionDone"
+            android:background="@drawable/ed_border"
+            android:layout_height="40dp" />
+
+        <RelativeLayout
+            android:layout_below="@+id/ed_phone"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="取消"
+                android:id="@+id/cancel"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="注册"
+                android:id="@+id/register"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

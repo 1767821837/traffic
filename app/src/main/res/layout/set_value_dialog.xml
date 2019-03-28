@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="600dp"
+    android:layout_height="450dp"
+	android:background="@drawable/dialog_bg"
+	android:gravity="center|top"
+	android:padding="22dp"
+    android:orientation="vertical">
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="right"
+		android:orientation="horizontal">
+		<TextView
+			android:text="设置阈值信息"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="32sp"
+			android:layout_marginRight="140dp"
+			android:id="@+id/title_text" />
+		<ImageView
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			app:srcCompat="@drawable/dialog_close"
+			android:layout_marginRight="15dp"
+			android:id="@+id/dialog_close" />
+	</LinearLayout>
+
+	<LinearLayout
+        android:layout_marginTop="22dp"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" 
+    	android:orientation="horizontal">
+		<TextView
+	        android:id="@+id/tv_pm2.5"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:textSize="22sp"
+			android:layout_weight="0.5"
+			android:layout_marginLeft="15dp"
+	        android:text="PM2.5：" />
+		<EditText 
+		    android:id="@+id/et_pm_values"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:textSize="22sp"
+			android:layout_weight="1"
+			android:layout_marginLeft="15dp"
+	        android:hint="输入PM2.5的值"/>
+		<TextView
+	        android:id="@+id/tv_co2"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:textSize="22sp"
+			android:layout_weight="0.5"
+			android:layout_marginLeft="15dp"
+	        android:text="Co2：" />
+		<EditText 
+		    android:id="@+id/et_co2_values"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:textSize="22sp"
+			android:layout_weight="1"
+			android:layout_marginLeft="15dp"
+	        android:hint="输入Co2的值"/>
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_marginTop="22dp"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" 
+    	android:orientation="horizontal">
+		<TextView
+	        android:id="@+id/tv_temperature"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+			android:layout_marginLeft="15dp"
+			android:layout_weight="0.5"
+	        android:textSize="22sp"
+	        android:text="温度：" />
+		<EditText 
+		    android:id="@+id/et_temperature_values"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+			android:layout_marginLeft="15dp"
+	        android:textSize="22sp"
+			android:layout_weight="1"
+	        android:hint="输入温度的值"/>
+		<TextView
+	        android:id="@+id/tv_humidity"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+			android:layout_marginLeft="15dp"
+	        android:textSize="22sp"
+			android:layout_weight="0.5"
+	        android:text="湿度：" />
+		<EditText 
+		    android:id="@+id/et_humidity_values"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+			android:layout_marginLeft="15dp"
+			android:layout_gravity="right"
+			android:layout_weight="1"
+	        android:textSize="22sp"
+	        android:hint="输入湿度的值"/>
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_marginTop="22dp"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" 
+    	android:orientation="horizontal">
+		<TextView
+	        android:id="@+id/tv_intensity"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+			android:layout_marginLeft="15dp"
+			android:layout_weight="0.5"
+	        android:textSize="22sp"
+	        android:text="光强：" />
+		<EditText 
+		    android:id="@+id/et_intensity_values"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+			android:layout_marginLeft="15dp"
+			android:layout_weight="1"
+	        android:textSize="22sp"
+	        android:hint="输入光强的值"/>
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="15dp"
+			android:layout_weight="0.5"
+			android:textSize="22sp"
+			 />
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="15dp"
+			android:layout_weight="1"
+			android:textSize="22sp"
+			/>
+	</LinearLayout>
+
+	<Button
+	    android:id="@+id/commit_btn"
+	    android:layout_gravity="center"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="22dp"
+	    android:textSize="22sp"
+		android:background="@drawable/btn_blue"
+	    android:text="提  交" />
+
+</LinearLayout>
